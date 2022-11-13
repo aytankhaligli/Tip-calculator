@@ -1,0 +1,194 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --Strong-cyan: rgb(38, 192, 171);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --orangered: hsl(16, 100%, 50%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Mono", sans-serif;
+  font-size: 24px;
+  background-color: var(--Light-grayish-cyan);
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 8px;
+  color: var(--Dark-grayish-cyan);
+  align-items: center;
+  margin: 50px;
+}
+.container {
+  display: flex;
+  background-color: var(--White);
+  border-radius: 20px;
+  gap: 30px;
+  padding: 30px;
+  width: fit-content;
+  margin: auto;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.bill,
+.people {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.bill label {
+  font-size: 15px;
+  color: var(--Dark-grayish-cyan);
+}
+input,
+.custom {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--Very-light-grayish-cyan);
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 20px;
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-family: "Space Mono";
+  font-size: 20px;
+  color: var(--Grayish-cyan);
+  vertical-align: middle;
+}
+.people-input:focus,
+textarea:focus,
+input:focus {
+  outline-color: var(--Strong-cyan);
+}
+.people input:invalid {
+  border: none;
+  outline: 2px solid hsl(16, 100%, 50%);
+}
+.bill i {
+  position: absolute;
+  padding: 35px 20px;
+}
+.people i {
+  position: absolute;
+  padding: 40px 20px;
+}
+.people,
+.select p {
+  font-size: 15px;
+  color: var(--Dark-grayish-cyan);
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 10px;
+}
+.option {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  border-radius: 5px;
+  padding: 10px;
+
+  text-align: center;
+  margin-top: 15px;
+}
+.option:hover {
+  cursor: pointer;
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+.custom {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Dark-grayish-cyan);
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.right-section {
+  background-color: var(--Very-dark-cyan);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.money {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.amount p,
+.total p {
+  font-size: 15px;
+  color: var(--White);
+}
+.amount span,
+.total span {
+  color: var(--Dark-grayish-cyan);
+  font-size: 13px;
+}
+.amount-text,
+.total-text {
+  line-height: 20px;
+}
+.amount-money,
+.total-money {
+  color: var(--Strong-cyan);
+  font-size: 45px;
+}
+button {
+  background-color: var(--Dark-grayish-cyan);
+  padding: 10px;
+  border: none;
+  width: 300px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Space Mono";
+  font-size: 20px;
+  color: var(--Very-dark-cyan);
+  opacity: 0.6;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--Strong-cyan);
+}
+.error-message {
+  color: orangered;
+}
+.people-top {
+  display: flex;
+  justify-content: space-between;
+}

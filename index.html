@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="name">
+      <div>SPLI</div>
+      <div>TTER</div>
+    </div>
+
+    <div class="container">
+      <div class="left-section">
+        <div class="bill">
+          <label for="bill">Bill</label>
+          <i class="dollar icon">
+            <img src="/images/icon-dollar.svg" alt="" />
+          </i>
+          <input type="text" placeholder="0" class="bill-input" />
+        </div>
+        <div class="select">
+          <p>Select Tip %</p>
+          <div class="options">
+            <div class="option option1">5%</div>
+            <div class="option option2">10%</div>
+            <div class="option option3">15%</div>
+            <div class="option option4">25%</div>
+            <div class="option option5">50%</div>
+            <input
+              type=""
+              class="custom"
+              contenteditable="true"
+              placeholder="Custom"
+            ></input>
+          </div>
+        </div>
+        <div class="people">
+          <div class="people-top">
+            <label for="people">Number of people</label>
+            <span class='error-message'></span>
+          </div>
+          
+          <i class="dollar icon">
+            <img src="/images/icon-person.svg" alt=""
+          /></i>
+          <input type="text" placeholder="0"    class="people-input" min='1'/>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="money">
+          <div class="amount">
+            <div class="amount-text">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+
+            <div class="amount-money">$0.00</div>
+          </div>
+          <div class="total">
+            <div class="total-text">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+
+            <div class="total-money">$0.00</div>
+          </div>
+        </div>
+        <div class="reset"><button>Reset</button></div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aytan Khaligli</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
